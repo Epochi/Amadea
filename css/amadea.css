@@ -275,16 +275,16 @@ nav ul, menu, dir {
 }
 
 .name-tag{
+	float: left; min-width:200px;
 	
-	float: left; min-width:150px; margin-left: 20px;
 }
 
 .price-tag{
-	float: left; min-width:200px;
+	
 }
 
 .time-tag{
-
+	float: left; min-width:150px; margin-left: 20px;
 }
 
 .name-tag, .price-tag, .time-tag {
