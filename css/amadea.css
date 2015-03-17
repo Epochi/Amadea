@@ -238,10 +238,11 @@ nav ul, menu, dir {
 
 }
 
+
 .tabs-left > .layer2 {
 	float: left;
-	margin-right: 19px;
 	border-right: 1px solid #ddd;
+	margin-right: 19px;
 	border-left: 0;
 }
 
@@ -274,21 +275,27 @@ nav ul, menu, dir {
 	border-radius: 4px 0 0 4px !important;
 }
 
-.name-tag{
-	float: left; min-width:200px;
-	
-}
-
-.price-tag{
-	
-}
-
-.time-tag{
-	float: left; min-width:150px; margin-left: 20px;
-}
-
 .name-tag, .price-tag, .time-tag {
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
 	font-weight: 400;
+}
+@media (max-width: 991px) {
+	.colored-row {
+		background-color: #DBDBDB;
+		border-radius: 4px;
+	}
+}
+
+@media (max-width: 991px) {
+	.top-price-row {
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 991px) {
+	.layer2 {
+		display: block;
+		width: 100%
+	}
 }
