@@ -1,0 +1,10 @@
+---
+layout: default
+title: Makiažas
+category: estetines
+---
+
+
+<p><div class="name-tag">Dieninis</div><div class="price-tag">17€</div></p>
+<p><div class="name-tag">Proginis</div><div class="price-tag">18€</div></p>
+<p>Atlikdami  bet  kokį  makiažą,  sekant  darbų eiliškumą,  galima  pasiekti  stulbinančių  rezultatų.  Net  eilinių  bruožų  veidą, galima  paversti  grožio  etalonu. Pagrindinė makiažo  paslaptis  -  dekoratyvinė kosmetika  turi  atitikti  individuliam  grožiui  ir amžiui.</p>

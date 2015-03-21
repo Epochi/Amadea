@@ -1,0 +1,31 @@
+---
+layout: default
+title: >
+  "Biopron" šviesos terapija
+category: aparatines
+---
+
+<p><div class="name-tag">Procedūros kaina</div><div class="price-tag">nuo 3€</div></p>
+<p>&nbsp;Šviesos terapija BIOPTRON veikia natūraliai, palaikydama regeneracines bei balansuojamąsias kūno savybes, ir taip padėdama atsiskleisti paties organizmo sveikimo potencialui. Patekusi į organizmą, šviesos energija skatina biostimuliacijos procesą, kuris organizme teigiamai stimuliuoja įvairius biologinius procesus ir pagerina organizmo veiklą.</p>
+<p><h4>Patogus naudoti nefarmakologinis gydymo metodas</h4></p>
+<p>Patogi naudoti, efektyvi ir nefarmakologinė medicinos priemonė –technologija BIOPTRON, tapo pripažinta ir įvairiai taikoma medicinoje. Penkiolika metų atliekant klinikinius tyrimus nustatyta, kad ši technologija naudinga ūmioms ir lėtinėms traumoms bei operacinėms žaizdoms konservatyviai gydyti.
+	<br>Medicinoje vėl pradėjome remtis Hipokrato gydymo filosofijos idėjoms: “Primum non nocere” (lot. pirmiausia – nepakenkti) ir “Gerbk gamtos gydomąsias galias”.
+	Šviesos terapijos sistema BIOPTRON yra medicinos prietaisas, aprobuotas remiantis 93/42/EEB direktyva.</p>
+	<p><h4>BIOSTIMULIUOJANTIS POVEIKIS</h4></p>
+	<p>BIOPTRON šviesa turi biostimuliuojantį poveikį – veikdama odą, ji stimuliuoja šviesai jautrias vidines ląstelių struktūras ir molekules. Todėl ląstelėse prasideda grandininės reakcijos ir pasireiškia vadinamosios antrinės reakcijos, kurios gali veikti ne tik gydomos odos plotą, bet ir visą organizmą.</p>
+	<p><h4>STIMULIUOJA IR MODULIUOJA</h4></p>
+	BIOPTRON šviesos terapija stimuliuoja ir moduliuoja atstatomuosius, regeneracinius ir žmogaus imuninės sistemos procesus.
+	<p><h4>VEIKIA NATŪRALIAI</h4></p>
+	BIOPTRON šviesos terapija palaiko natūralią organizmo regeneraciją ir taip leidžia atsiskleisti organizme glūdinčiam gydomajam potencialui.
+
+	<p><h4>POLIARIZUOTA</h4></p>
+	BIOPTRON šviesa yra poliarizuota – jos bangos sklinda (virpa) lygiagrečiomis plokštumomis. BIOPTRON prietaisais skleidžiama šviesa siekia 95% poliarizacijos laipsnį.
+	<p><h4>POLICHROMATINĖ</h4></p>
+	BIOPTRON šviesa yra polichromatinė. Tai reiškia, kad šią šviesą sudaro ne vienodo ilgio spinduliai (pavyzdžiui, lazerio spinduliai), bet įvairūs, įskaitant matomos šviesos ir dalį infraraudonųjų spindulių spektro. BIOPTRON šviesos bangos ilgių diapazonas yra nuo 480 nm iki 3400 nm.
+	BIOPTRON šviesoje nėra UV spindulių!
+	<p><h4>NEKOHERENTIŠKA</h4></p>
+	Koherentiška arba vienodo fazių svyravimo lazerio šviesa.
+	<br>Koherentiška – tai šviesa, kurios bangų svyravimai sutampa fazėmis.
+	<br>Skirtingai nuo lazerio spindulių, BIOPTRON šviesa yra nekoherentiška, t. y. jos bangų svyravimų fazės nesutampa.
+	<p><h4>MAŽO INTENSYVUMO</h4></p>
+	BIOPTRON šviesa yra mažo energijos tankio. Šis mažas energijos tankis veikia biostimuliuojančiai todėl šviesa teigiamai veikia įvarius biologinius procesus, vykstančius organizme.</p>

@@ -1,0 +1,8 @@
+---
+layout: default
+title: >
+  "Biomak" Galvanizacija
+category: aparatines
+---
+
+<p><div class="name-tag">Procedūros kaina</div><div class="price-tag">nuo 3€</div></p>
