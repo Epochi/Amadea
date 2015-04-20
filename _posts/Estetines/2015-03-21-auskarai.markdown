@@ -4,9 +4,10 @@ name: Auskarai
 category: estetines
 ---
 
+<div class="content-box">
+<div class="row top-price-row"><div class="name-tag">Ausų vėrimas(su auskarais)</div><div class="price-tag">12€</div>
+<div class="row colored-row"><div class="name-tag">Ausų vėrimas į kitas kūno vietas</div><div class="price-tag">26€</div></div>
 
-<p><div class="name-tag">Ausų vėrimas(su auskarais)</div><div class="price-tag">12€</div></p>
-<p><div class="name-tag">Ausų vėrimas į kitas kūno vietas</div><div class="price-tag">26€</div></p>
-
-<p>Visos sutiksime, kad moterys siekia būti gražios ir patrauklios. Į pagalbą pasitelkia rūbus, kosmetiką, kvepalus ir, savaime suprantama, papuošalus. Auskarai ausyse - įprastas ir seniai žinomas būdas pasipuošti. O pastaruoju metu auskarus veria ne tik į ausis, bet ir į nosį, antakius, lūpą, liežuvį, bambą. Vertėtų žinoti, kad kiekvienai vėrimo rūšiai egzistuoja specifinės auskarų formos, o pirmam vėrimui naudojami tik iš specialaus metalo pagaminti auskarai (o ne tiesiog pirkti parduotuvėje), nesukeliantys alergijos net ir itin jautriam organizmui.<br>Auskarą įveria profesionaliai: iš pradžių pažymėsime reikiamą tašką ir pačią procedūrą atliksime taip, kad ji būtų kuo mažiau skausminga. Visas procesas užtruks maždaug 15-20 minučių. O po paaiškinsime apie tolimesnę priežiūrą namuose.
+<p class="text-box">Visos sutiksime, kad moterys siekia būti gražios ir patrauklios. Į pagalbą pasitelkia rūbus, kosmetiką, kvepalus ir, savaime suprantama, papuošalus. Auskarai ausyse - įprastas ir seniai žinomas būdas pasipuošti. O pastaruoju metu auskarus veria ne tik į ausis, bet ir į nosį, antakius, lūpą, liežuvį, bambą. Vertėtų žinoti, kad kiekvienai vėrimo rūšiai egzistuoja specifinės auskarų formos, o pirmam vėrimui naudojami tik iš specialaus metalo pagaminti auskarai (o ne tiesiog pirkti parduotuvėje), nesukeliantys alergijos net ir itin jautriam organizmui.<br>Auskarą įveria profesionaliai: iš pradžių pažymėsime reikiamą tašką ir pačią procedūrą atliksime taip, kad ji būtų kuo mažiau skausminga. Visas procesas užtruks maždaug 15-20 minučių. O po paaiškinsime apie tolimesnę priežiūrą namuose.
 </p>
+</div>

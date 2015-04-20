@@ -4,8 +4,9 @@ name: Procedūra su "Swinger" aparatu
 category: masazai
 ---
 
-<p><div class="name-tag">Procedūros kaina</div><div class="price-tag">nuo 3€ iki 9€</div></p>
-<p>&nbsp;Tai puikus daugiafunkcinis profilaktinis ir sveikatą stiprinantis aparatas medicinos įstaigoms bei individualiam naudojimui.</p>
+<div class="content-box">
+<div class="row top-price-box"><div class="name-tag">Procedūros kaina</div><div class="price-tag">nuo 3€ iki 9€</div></div>
+<div class="text-box"><p>&nbsp;Tai puikus daugiafunkcinis profilaktinis ir sveikatą stiprinantis aparatas medicinos įstaigoms bei individualiam naudojimui.</p>
 <p>Reguliarus naudojimas duoda tokį patį profilaktinį – gydomąjį efektą, kaip ir daugelio valandų fizinė mankšta arba ilgų distancijų bėgimas.</p>
 <p>Aparatą gali naudoti visų amžiaus grupių asmenys. Kūno padėtis procedūros metu – gulima – atsipalaidavus, todėl nėra traumų tikimybės.</p>
 <p><h4>SWINGER rekomenduojama naudoti, kai yra:</h4></p>
@@ -34,4 +35,4 @@ category: masazai
 <br>•	gerina endokrininės sistemos, vidaus organų darbą, kraujo apykaitą, tuštinimąsi (esant vidurių užkietėjimams);
 <br>•	malšina galvos skausmus, ramina (esant nemigai), nuima nervinę įtampą, šalina nuovargį, atpalaiduoja;
 <br>•	stiprina pilvo raumenis, gerina odos būklę, užkerta kelią raukšlių atsiradimu. 
-</p>
+</p></div></div>

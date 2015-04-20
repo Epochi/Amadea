@@ -5,7 +5,7 @@ category: estetines
 ---
 
 
-<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+<div class="content-box">
 <div class="row top-price-row"><div class="name-tag col-lg-3 col-md-3 col-sm-3 col-xs-12">Antakių vašku/cukrumi</div><div class="price-tag col-lg-2 col-md-2 col-sm-2 col-xs-6">3/4,5€</div></div>
 	<div class="row colored-row"><div class="name-tag col-lg-3 col-md-3 col-sm-3 col-xs-12">Ūsiukų vašku/cukrumi</div><div class="price-tag col-lg-2 col-md-2 col-sm-2 col-xs-6">3/4,5€</div></div>
 	<div class="row"><div class="name-tag col-lg-3 col-md-3 col-sm-3 col-xs-12">Veido vašku/cukrumi</div><div class="price-tag col-lg-2 col-md-2 col-sm-2 col-xs-6">6/7,5€</div></div>
