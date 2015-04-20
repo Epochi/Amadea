@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Procedūra "Lengvos Kojos"
+name: Procedūra "Lengvos Kojos"
 category: masazai
 ---
 

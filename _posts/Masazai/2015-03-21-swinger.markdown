@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Procedūra su "Swinger" aparatu
+name: Procedūra su "Swinger" aparatu
 category: masazai
 ---
 

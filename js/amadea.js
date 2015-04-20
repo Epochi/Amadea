@@ -16,3 +16,4 @@ $('#interest_tabs').on('click', 'a[data-toggle="tab"]', function(e) {
       }
 
     });
+

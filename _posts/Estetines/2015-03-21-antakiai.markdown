@@ -1,7 +1,6 @@
 ---
 layout: default
-title: >
-  Antakiai ir Blakstienos
+name: Antakiai ir Blakstienos
 category: estetines
 ---
 <p><div class="name-tag">Cheminis antakių dažymas</div><div class="price-tag">3€</div></p>

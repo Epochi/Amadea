@@ -1,6 +1,6 @@
 ---
 layout: default
-title: >
+name: >
   Deimantinė Mikrodermobrazija
 category: aparatines
 ---

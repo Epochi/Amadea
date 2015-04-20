@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Depiliacija
+name: Depiliacija
 category: estetines
 ---
 

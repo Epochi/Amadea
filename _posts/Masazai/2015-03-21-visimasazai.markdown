@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Visi masažai
+name: Visi masažai
 category: masazai
 ---
 

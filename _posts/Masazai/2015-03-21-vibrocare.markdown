@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Masažai su "Vibro Care" aparatu
+name: Masažai su "Vibro Care" aparatu
 category: masazai
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Auskarai
+name: Auskarai
 category: estetines
 ---
 

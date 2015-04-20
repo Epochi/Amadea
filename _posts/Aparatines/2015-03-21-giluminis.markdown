@@ -1,6 +1,6 @@
 ---
 layout: default
-title: >
+name: >
   Giluminis viedo valymas ultragarsu
 category: aparatines
 ---

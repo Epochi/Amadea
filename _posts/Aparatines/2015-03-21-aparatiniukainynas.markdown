@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Aparatinių procedūrų kainynas
+name: Aparatinių procedūrų kainynas
 category: aparatines
 ---
 
