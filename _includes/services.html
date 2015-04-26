@@ -1,45 +1,89 @@
 <section id="services" class="box section-a">
+
+	<!--Menu for desktop-->
 	<div class="container">
-		<div class="tabs-left">
-			<ul class="nav nav-tabs layer1 col-lg-2 col-md-2 col-sm-2 col-xs-12" id="interest_tabs">
-				<!--top level tabs-->
-				<li><a href="#estetines" data-toggle="tab">Estetinės Procedūros</a></li>
-				<li><a href="#masazai" data-toggle="tab">Masažai</a></li>
-				<li><a href="#aparatines" data-toggle="tab">Aparatinės Procedūros</a></li>
+		<div class="desktop">
+			<div class="tabs-left">
+				<ul class="nav nav-tabs layer1 col-lg-2 col-md-2 col-sm-2 col-xs-12" id="interest_tabs">
+					<!--top level tabs-->
+					<li><a href="#estetines" data-toggle="tab">Estetinės Procedūros</a></li>
+					<li><a href="#masazai" data-toggle="tab">Masažai</a></li>
+					<li><a href="#aparatines" data-toggle="tab">Aparatinės Procedūros</a></li>
 
-			</ul>
+				</ul>
 
+			</div>
+
+			<!--top level tab content-->
+			<div class="tab-content col-lg-2 col-lg-offset-0  col-md-2 col-md-offset-0 col-sm-2 col-sm-offset-0 col-xs-offset-2 col-xs-10">
+				<!--estetines proceduros tab menu-->
+				<div id="estetines" class="tab-pane tabs-left">
+					<ul class="nav nav-tabs layer2">
+						{% for estetines in site.categories.estetines  %}
+						<li><a href="#{{estetines.title}}" data-toggle="tab">{{estetines.name}}</a></li> {% endfor %}
+					</ul>
+				</div>
+
+				<!--masazai tab menu-->
+				<div id="masazai" class="tab-pane  tabs-left">
+					<ul class="nav nav-tabs layer2">
+						{% for masazai in site.categories.masazai  %}
+						<li><a href="#{{masazai.title}}" data-toggle="tab">{{masazai.name}}</a></li> {% endfor %}
+					</ul>
+				</div>
+
+				<!--aparatines tab menu-->
+				<div id="aparatines" class="tab-pane  tabs-left">
+					<ul class="nav nav-tabs layer2">
+						{% for aparatines in site.categories.aparatines  %}
+						<li><a href="#{{aparatines.title}}" data-toggle="tab">{{aparatines.name}}</a></li> {% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>	
+
+
+		<!--Menu for mobile-->
+
+		<div class="mobile">
+
+			<div id="accordion">
+
+				<h3>Estetinės Procedūros</h3>
+				<div>
+					<ul class="nav">
+						{% for estetines in site.categories.estetines %}
+
+						<li><a href="#{{estetines.title}}" data-toggle="tab">{{estetines.name}}</a></li>
+
+						{% endfor %}
+					</ul>
+				</div>
+
+				<h3>Masažai</h3>
+				<div>
+					<ul class="nav">
+						{% for masazai in site.categories.masazai  %}
+						<li><a href="#{{masazai.title}}" data-toggle="tab">{{masazai.name}}</a></li> {% endfor %}
+
+					</ul>
+				</div>
+
+				<h3>Aparatinės Procedūros</h3>
+				<div>
+					<ul class="nav">
+						{% for aparatines in site.categories.aparatines  %}
+						<li><a href="#{{aparatines.title}}" data-toggle="tab">{{aparatines.name}}</a></li> {% endfor %}	
+					</ul>
+				</div>
+
+			</div>
 		</div>
 
-		<!--top level tab content-->
-		<div class="tab-content col-lg-2 col-lg-offset-0  col-md-2 col-md-offset-0 col-sm-2 col-sm-offset-0 col-xs-offset-2 col-xs-10">
-			<!--estetines proceduros tab menu-->
-			<div id="estetines" class="tab-pane tabs-left">
-				<ul class="nav nav-tabs layer2">
-					{% for estetines in site.categories.estetines  %}
-					<li><a href="#{{estetines.title}}" data-toggle="tab">{{estetines.name}}</a></li> {% endfor %}
-				</ul>
-			</div>
 
-			<!--masazai tab menu-->
-			<div id="masazai" class="tab-pane  tabs-left">
-				<ul class="nav nav-tabs layer2">
-					{% for masazai in site.categories.masazai  %}
-					<li><a href="#{{masazai.title}}" data-toggle="tab">{{masazai.name}}</a></li> {% endfor %}
-				</ul>
-			</div>
-
-			<!--aparatines tab menu-->
-			<div id="aparatines" class="tab-pane  tabs-left">
-				<ul class="nav nav-tabs layer2">
-					{% for aparatines in site.categories.aparatines  %}
-					<li><a href="#{{aparatines.title}}" data-toggle="tab">{{aparatines.name}}</a></li> {% endfor %}
-				</ul>
-			</div>
-		</div>
 
 		<!--all tab content-->
-		
+
 		<div class="tab-content">
 
 			{% for estetines in site.categories.estetines %}
@@ -49,21 +93,12 @@
 			</div>
 			{% endfor %}
 
-		</div>
-
-		<div class="tab-content">
-
 			{% for masazai in site.categories.masazai %}
 
 			<div id="{{masazai.title}}" class="tab-pane">
 				{{masazai.content}}
 			</div>
 			{% endfor %}
-
-		</div>
-
-
-		<div class="tab-content">
 
 			{% for aparatines in site.categories.aparatines %}
 
@@ -74,9 +109,7 @@
 
 
 		</div>
+
 	</div>
-</div>
-</div>
-</div>
 
 </section>

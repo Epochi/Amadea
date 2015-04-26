@@ -1,6 +1,26 @@
 ---
 ---
 
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+
 body,
 html {
 	width: 100%;
@@ -277,28 +297,27 @@ nav ul, menu, dir {
 	border-radius: 4px 0 0 4px !important;
 }
 
+/* services content styling */
+
 .name-tag, .price-tag, .time-tag {
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
 	font-weight: 400;
 }
-@media (max-width: 991px) {
-	.colored-row {
-		background-color: #DBDBDB;
-		border-radius: 4px;
-	}
-}
 
-@media (max-width: 991px) {
-	.top-price-row {
-		padding-top: 20px;
-	}
-}
+
 
 @media (max-width: 991px) {
 	.layer2 {
 		display: block;
 		width: 100%
+	}
+	.top-price-row {
+		padding-top: 20px;
+	}
+	.colored-row {
+		background-color: #DBDBDB;
+		border-radius: 4px;
 	}
 }
 
@@ -307,3 +326,28 @@ nav ul, menu, dir {
 		padding-left: 10px;
 	}
 }
+
+/* hide services menus depending on screen size (because of different styles) */
+
+@media (min-width: 768px) {
+	.mobile {
+		display:none !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.desktop {
+		display:none !important;
+	}
+}
+
+/* mobile accordion menu styling */
+
+.ui-state-focus:focus { 
+	outline:none !important
+}
+
+#accordion > h3 > div > ul > li {
+	list-style: none;
+}
+

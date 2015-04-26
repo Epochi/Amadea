@@ -17,3 +17,29 @@ $('#interest_tabs').on('click', 'a[data-toggle="tab"]', function(e) {
 
     });
 
+
+
+
+//Jquery.UI accordion snippet for dynamic content height
+
+$(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content",
+      active: "false"
+    });
+  });
+
+//When clicking on menu choice remove all submenu choices 
+//for desktop
+
+ $('#interest_tabs li a').click(function() {
+
+    $('.layer2 li.active').removeClass('active');
+});
+
+ //for mobile
+
+ $('#accordion h3').click(function() {
+
+    $('li.active').removeClass('active');
+});
