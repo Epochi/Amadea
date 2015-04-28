@@ -51,7 +51,7 @@
 
 				<h3>Estetinės Procedūros</h3>
 				<div>
-					<ul class="nav">
+					<ul class="nav mobile-nav">
 						{% for estetines in site.categories.estetines %}
 
 						<li><a href="#{{estetines.title}}" data-toggle="tab">{{estetines.name}}</a></li>
@@ -62,7 +62,7 @@
 
 				<h3>Masažai</h3>
 				<div>
-					<ul class="nav">
+					<ul class="nav mobile-nav">
 						{% for masazai in site.categories.masazai  %}
 						<li><a href="#{{masazai.title}}" data-toggle="tab">{{masazai.name}}</a></li> {% endfor %}
 
@@ -71,7 +71,7 @@
 
 				<h3>Aparatinės Procedūros</h3>
 				<div>
-					<ul class="nav">
+					<ul class="nav mobile-nav">
 						{% for aparatines in site.categories.aparatines  %}
 						<li><a href="#{{aparatines.title}}" data-toggle="tab">{{aparatines.name}}</a></li> {% endfor %}	
 					</ul>

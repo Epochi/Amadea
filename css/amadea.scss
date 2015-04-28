@@ -300,9 +300,9 @@ nav ul, menu, dir {
 /* services content styling */
 
 .name-tag, .price-tag, .time-tag {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Alegreya Sans', sans-serif;
 	font-style: italic;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 
@@ -351,3 +351,32 @@ nav ul, menu, dir {
 	list-style: none;
 }
 
+
+.ui-accordion-header-active {
+	color: #503939;
+	cursor: default;
+	border-left: 2px solid #503939;
+	padding: 10px 0px 10px 10px;
+	margin-bottom: 0px;
+}
+
+.ui-accordion-header {
+	color: #503939;
+	cursor: default;
+	padding: 10px 0px 10px 10px;
+}
+
+.mobile-nav > li > a:focus {
+	background-color: transparent;
+	border-left: 2px solid #503939;
+	padding-left: 30px;
+}
+
+.mobile-nav > li > a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#accordion > h3 {
+	font-size: 18px;
+}
