@@ -37,13 +37,13 @@
                                  <div class="panel-heading">
                                 	<h4 class="panel-title">
                                 		<ul class="nav nav-tabs">
-	         								<li class="custom-nav active" href="#{{ post.title }}">
+	         								<li class="col-xs-12-custom custom-nav active" href="#{{ post.title }}">
 	         									<a class="custom-tab"  data-parent="#InnerAcc" href="#{{ post.title }}">
 	        									{{ post.name }}
 	        									</a>
 	        								</li>
 
-	        								<li class="custom-nav description" href="#{{ post.title }}-content">
+	        								<li class="col-xs-12-custom custom-nav description" href="#{{ post.title }}-content">
 	        									<a data-parent="#InnerAcc" href="#{{ post.title }}-content">
 	        									Aprašymas
 	        									</a>
@@ -53,31 +53,28 @@
         							</div>
 
         							 <div id="{{ post.title }}" class="deepest-acc active panel-collapse collapse in">
-                                        <div class="deep-panel-body">        					
+                                        <div class="deep-panel-body">   					
 											
 	                                     
 	                                           
-	                                            	<table class="price-list table table-hover"> 
-	                                            		<tbody>     
-	                                            	 {% for procedure in post.procedures %}
-	                                            	 <tr>     
-	                                            	 <td class="col-xs-6">
-	                                            	 {% if procedure.detail.size > 0 %}
-	                                            	 <a class="popover-helper" data-content="{{ procedure.detail }}">{{ procedure.name }}*</a>
-	                                            	 {% else %}
-	                                            	 	{{ procedure.name }}
-	                                            	 {% endif %}
-	                                            	 </td>
-	                                            	 <td class="col-xs-2"> {{ procedure.price | append: "€" | replace: 'mi€', 'mi' }}</td>                                
-	                                          		 </tr>
+	                                            <table class="price-list table table-hover"> 
+	                                            	<tbody>     
+	                                            		 {% for procedure in post.procedures %}
+	                                            		 <tr>     
+	                                            			 <td class="col-sm-6 col-xs-6">
+	                                            			 {% if procedure.detail.size > 0 %}
+	                                            			 	<a class="popover-helper" data-content="{{ procedure.detail }}">{{ procedure.name }}*</a>
+	                                            			 {% else %}
+	                                            	 		{{ procedure.name }}
+	                                            			 {% endif %}
+	                                            			 </td>
+	                                            	 		<td class="col-sm-2 col-xs-3"> {{ procedure.price | append: "€" | replace: 'mi€', 'mi' }}</td>                                
+	                                          			 </tr>
 	                                          		 {% endfor %}
-	                                          		 	</tbody>
-	                                          		</table>                                 
+	                                          		</tbody>
+	                                          	</table>                                 
                                    		</div>
                                    </div>
-
-
-
                                     <div id="{{ post.title }}-content" class="deepest-acc panel-collapse collapse">
                                          <div class="deep-panel-body">
                                          
@@ -85,16 +82,12 @@
 
                                         </div>
                                     </div>
-
-
-                                 
-                                 
                                     {% else %}
 
                                    <div class="panel-heading">
                                     <h4 class="panel-title">
                                 		<ul class="nav nav-tabs">
-	         								<li class="custom-nav active" href="#{{ post.title }}">
+	         								<li class="col-xs-12-custom custom-nav active" href="#{{ post.title }}">
 	         									<a data-parent="#InnerAcc">
 	        									{{ post.name }}
 	        									</a>
@@ -111,13 +104,13 @@
 	                                            		<tbody>     
 	                                            	 {% for procedure in post.procedures %}
 	                                            	 <tr >     
-	                                            	 <td class="col-xs-6">
+	                                            	 <td class="col-sm-6 col-xs-6">
 	                                            	  {% if procedure.detail.size > 0 %}
 	                                            	 <a class="popover-helper" data-content="{{ procedure.detail }}">{{ procedure.name }}*</a>
 	                                            	 {% else %}
 	                                            	 	{{ procedure.name }}
 	                                            	 {% endif %}</td>
-	                                            	 <td class="col-xs-2"> {{ procedure.price | append: "€" | replace: 'mi€', 'mi' }}</td>                                   
+	                                            	 <td class="col-sm-2 col-xs-3"> {{ procedure.price | append: "€" | replace: 'mi€', 'mi' }}</td>                                   
 	                                          		 </tr>
 	                                          		 {% endfor %}
 	                                          		 	</tbody>

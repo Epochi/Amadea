@@ -4,7 +4,7 @@ name: Drėkinamoji veido procedūra su kalogeno lakštu ir hialiurono rūgšties
 category: Aparatinės
 procedures:
  - name: Kaina
-   price: no-price
+   price: 30
 ---
 
 <div class="text-box">

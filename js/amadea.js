@@ -1,7 +1,7 @@
 $('a.scrolly').click(function(){
   $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 400);
+    }, 1200, "easeInOutCubic");
     return false;
 });
 
@@ -30,11 +30,14 @@ $('.InnerAcc').on('show.bs.collapse', function(e){
         var thisID = $(this).attr('id');
         var locator = "." + thisID + "-i";       
         $(this).parent().find(locator).switchClass( 'glyphicon-menu-right', 'glyphicon-menu-down');  
-        
-        if ($(this).siblings().hasClass('in')) {        
-          $('html, body').animate({
-             scrollTop: $('#services').offset().top}, 0);          
-            $('#accordion1 > .InnerAcc.in').collapse('hide');
+
+        if ($(this).siblings().hasClass('in')) {  
+          var scrollDurr = ($(this).offset().top - $('#services').offset().top);
+          if (scrollDurr > 0) {
+            $('html, body').animate({
+            scrollTop: $('#services').offset().top},0); 
+          };          
+          $('#accordion1 > .InnerAcc.in').collapse('hide');
         };               
 
 });
