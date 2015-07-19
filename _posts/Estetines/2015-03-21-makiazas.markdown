@@ -1,11 +1,12 @@
 ---
 layout: default
 name: Makiažas
-category: estetines
+category: Estetinės
+procedures:
+ - name: Dieninis
+   price: 15
+ - name: Proginis
+   price: 20
+ - name: Vestuvinis
+   price: 29
 ---
-
-<div class="content-box">
-<div class="row top-price-row"><div class="name-tag">Dieninis</div><div class="price-tag">17€</div></div>
-<div class="row colored-row"><div class="name-tag">Proginis</div><div class="price-tag">18€</div></div>
-<p class="text-box">Atlikdami  bet  kokį  makiažą,  sekant  darbų eiliškumą,  galima  pasiekti  stulbinančių  rezultatų.  Net  eilinių  bruožų  veidą, galima  paversti  grožio  etalonu. Pagrindinė makiažo  paslaptis  -  dekoratyvinė kosmetika  turi  atitikti  individuliam  grožiui  ir amžiui.</p>
-</div>

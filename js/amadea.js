@@ -1,45 +1,74 @@
-$('#interest_tabs').on('click', 'a[data-toggle="tab"]', function(e) {
-      e.preventDefault();
-
-      var $link = $(this);
-
-      if (!$link.parent().hasClass('active')) {
-
-        //remove active class from other tab-panes
-        $('.tab-content:not(.' + $link.attr('href').replace('#','') + ') .tab-pane').removeClass('active');
-
-        // click first submenu tab for active section
-        $('a[href="' + $link.attr('href') + '_all"][data-toggle="tab"]').click();
-
-        // activate tab-pane for active section
-        $('.tab-content.' + $link.attr('href').replace('#','') + ' .tab-pane:first').addClass('active');
-      }
-
-    });
+$('a.scrolly').click(function(){
+  $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 400);
+    return false;
+});
 
 
 
 
-//Jquery.UI accordion snippet for dynamic content height
+//initialize popovers
 
-$(function() {
-    $( "#accordion" ).accordion({
-      heightStyle: "content",
-      active: "false"
-    });
+$(function () {
+  $('[data-toggle="popover"]').popover()
+});
+
+//add popover html attributes(for cleanerer html)
+$('.popover-helper').attr({
+    "data-toggle" : "popover",
+    "data-placement" : "right",
+    "data-trigger" : "hover",
+    "data-container" : "body"
+});
+
+//switch icon after click
+
+
+$('.InnerAcc').on('show.bs.collapse', function(e){
+        //e.stopPropagation();
+        var thisID = $(this).attr('id');
+        var locator = "." + thisID + "-i";       
+        $(this).parent().find(locator).switchClass( 'glyphicon-menu-right', 'glyphicon-menu-down');  
+        
+        if ($(this).siblings().hasClass('in')) {        
+          $('html, body').animate({
+             scrollTop: $('#services').offset().top}, 0);          
+            $('#accordion1 > .InnerAcc.in').collapse('hide');
+        };               
+
+});
+
+$('.InnerAcc').on('hide.bs.collapse', function(e){
+        //e.stopPropagation();
+        var thisID = $(this).attr('id');
+        var locator = "." + thisID + "-i";
+        $(this).parent().find(locator).switchClass( 'glyphicon-menu-down', 'glyphicon-menu-right');     
+});
+
+//dont let clicking children to switch the icon of parent
+$('.deepest-acc').on('hidden.bs.collapse', function(e){
+        e.stopPropagation(); 
+});
+$('.deepest-acc').on('show.bs.collapse', function(e){
+        e.stopPropagation();
+});
+
+//prevent collapse when panel is showing
+$('.custom-nav').on('click', function(e){
+  e.preventDefault();
+  var thisID = $(this).attr('href');
+  var thisTab = $(this).find('a');
+    if(!$(this).hasClass('active') && $(this).siblings().hasClass('active')  && !$(thisID).siblings().hasClass('collapsing')){
+      $(thisID).collapse('toggle');
+      $(thisTab).tab('show')
+    } else if(!$(thisID).hasClass('in') && !$(thisID).hasClass('collapsing')  && !$(thisID).siblings().hasClass('collapsing')){
+       $(thisID).collapse('toggle');
+       $(thisTab).tab('show')
+     } else if ($(thisID).hasClass('in') && $(this).hasClass('active')){
+      $(thisID).collapse('toggle');
+      $(this).removeClass('active');
+    }
   });
 
-//When clicking on menu choice remove all submenu choices 
-//for desktop
 
- $('#interest_tabs li a').click(function() {
-
-    $('.layer2 li.active').removeClass('active');
-});
-
- //for mobile
-
- $('#accordion h3').click(function() {
-
-    $('li.active').removeClass('active');
-});
