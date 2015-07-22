@@ -66,6 +66,8 @@ html {
 
 .logo {
     max-height: 80px;
+    height: inherit;
+    width: inherit;
 }
 
 .box {
@@ -161,9 +163,6 @@ dir {
     text-decoration: none;
 }
 
-.amadea-fix {
-    position: relative;
-}
 /* Flexible iFrame */
 
 .Flexible-container {
@@ -191,13 +190,6 @@ dir {
 	padding-left: 20px;
 	}
     
-}
-
-
-
-
-.price_masters {
-	display: none !important; 
 }
 
 .top-icons {
@@ -287,6 +279,8 @@ dir {
     	padding-left: 8px;
     	padding-right: 8px;
     }
+
+
 }
 
 
