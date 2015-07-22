@@ -4,7 +4,7 @@ name: Auskarų vėrimo procedūros
 category: Estetinės
 procedures:
  - name: Į ausis (su auskarais)
-   price:15
+   price: 15
  - name: Į kitas kūno vietas
    price: 26
 ---
