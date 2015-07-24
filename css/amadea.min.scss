@@ -3997,9 +3997,23 @@ dir {
 .logo-ie {
   height: 80px;
   width: 99px;
+
 }
 
 .entry-image-ie{
   max-width: 100%;
+}
+.img-about-ie {
+  max-width: 400px; 
+  padding-top: 20px;
+}
 
+.col-6-ie {
+  width: 40%;
+  float: left;
+  padding: 20px 20px 20px 20px;
+}
+.row-ie{
+  width: 90%;
+  display:inline-table;
 }

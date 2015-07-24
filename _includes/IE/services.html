@@ -1,1 +1,127 @@
-nada
+<section id="services" class="box section-a">
+    <!--Menu for desktop-->
+    <div class="container">
+        <div class="desktop">
+            <!--  -->
+  
+            <!--accordion master-->
+            <div class="custom-panel-group">
+
+            	 {% comment %}
+					sorted by oldest post in folder
+				{% endcomment %}
+
+                {% for category in site.categories %}
+                	 {% assign posts = category[1] %}
+                <!-- top level acc button -->
+                <div class="top-panel-default">
+                    <div class="top-panel-heading">
+                        <h3 class="top-panel-title">
+                        	<a class="top-button">                       	
+                        		<span class="top-icons {{ category[0] }}-i glyphicon glyphicon-menu-right" aria-hidden="true"></span> {{ category[0] | capitalize | append: ' Procedūros' | replace: "Masažai Procedūros", "Masažai"  }}
+              				</a>
+            			</h3>
+                    </div>
+                </div>
+                <!-- second level button -->
+
+                <div class="InnerAcc">
+
+                    <div class="panel-body">
+                    	<hr class="simple-hr">
+                      
+                        <div class="custom-deep-panel-group" id="InnerAcc">
+                          {% for post in posts %}
+                            <div class="deep-panel">
+                              {% if post.content.size > 1 %}
+                                 <div class="panel-heading">
+                                	<h4 class="panel-title">
+                                		<ul class="nav nav-tabs">
+	         								<li class="col-xs-12-custom custom-nav active" href="#{{ post.title }}">
+	         									<a class="custom-tab"  data-parent="#InnerAcc" href="#{{ post.title }}">
+	        									{{ post.name }}
+	        									</a>
+	        								</li>
+
+	        								<li class="col-xs-12-custom custom-nav description" href="#{{ post.title }}-content">
+	        									<a data-parent="#InnerAcc" href="#{{ post.title }}-content">
+	        									Aprašymas
+	        									</a>
+	        								</li>
+        								</ul>
+        							</h4>
+        							</div>
+
+        							 <div id="{{ post.title }}" class="deepest-acc active panel-collapse collapse in">
+                                        <div class="deep-panel-body">   					
+											
+	                                     
+	                                           
+	                                            <table class="price-list table table-hover"> 
+	                                            	<tbody>     
+	                                            		 {% for procedure in post.procedures %}
+	                                            		 <tr>     
+	                                            			 <td class="col-sm-6 col-xs-6">
+	                                            			 {{ procedure.name }}	                                            		
+	                                            			 </td>
+	                                            	 		<td class="col-sm-2 col-xs-3"> {{ procedure.price | append: "€" | replace: 'mi€', 'mi' }}</td>                                
+	                                          			 </tr>
+	                                          		 {% endfor %}
+	                                          		</tbody>
+	                                          	</table>                                 
+                                   		</div>
+                                   </div>
+                                    <div id="{{ post.title }}-content" class="deepest-acc panel-collapse collapse">
+                                         <div class="deep-panel-body">
+                                         
+                                            {{ post.content }}
+
+                                        </div>
+                                    </div>
+                                    {% else %}
+
+                                   <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                		<ul class="nav nav-tabs">
+	         								<li class="col-xs-12-custom custom-nav active" href="#{{ post.title }}">
+	         									<a data-parent="#InnerAcc">
+	        									{{ post.name }}
+	        									</a>
+	        								</li>	        								
+        								</ul>
+        							</h4>
+        							</div>
+        							 <div id="{{ post.title }}" class="deepest-acc panel-collapse collapse in">
+                                        <div class="deep-panel-body">       					
+	                                   			 
+	                                     
+	                                           
+	                                            	<table class="price-list table table-hover"> 
+	                                            		<tbody>     
+	                                            	 {% for procedure in post.procedures %}
+	                                            	 <tr >     
+	                                            	 <td class="col-sm-6 col-xs-6">
+	                                            	 	{{ procedure.name }}</td>
+	                                            	 <td class="col-sm-2 col-xs-3"> {{ procedure.price | append: "€" | replace: 'mi€', 'mi' }}</td>                                   
+	                                          		 </tr>
+	                                          		 {% endfor %}
+	                                          		 	</tbody>
+	                                          		</table>	                                     
+                                  		                        
+
+                                   	     </div>
+                                   </div>
+                                	{% endif %}
+                                
+                            </div>
+                             {% endfor %}
+                        </div>
+                       
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+       <!-- desktop end -->   
+        </div>
+    </div>
+</section>
