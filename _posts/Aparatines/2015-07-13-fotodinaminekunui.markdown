@@ -1,6 +1,6 @@
 ---
 layout: default
-name: Fotodinaminė šviesos terapija veidui
+name: Fotodinaminė šviesos procedūra veidui
 category: Aparatinės
 procedures:
  - name: Kaina
